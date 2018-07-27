@@ -46,32 +46,32 @@
 	</section>
 
 	<section>
-	<section>
-	  <h3>The Data</h3>
-	  <p align="left">Our panel data are obtained from the <a href="https://cdr.ffiec.gov/public/">Call Reports</a> banks are required to file with the FDIC.</p>
-	  <ul>
-	    <li>Our sample contains quarterly data, and ranges from January 2001 to December 2017 inclusive.</li>
-	    <li>We have slightly more than 179,956  bank/year observations.</li>
-	    <li></li>
-	  </ul>
-	</section>
-	<!-- descriptive statistics -->
-		  <section>
-		    <div class="stretch">
-		      <!-- <h6>Median Values</h6> -->
+	  <section>
+	    <h3>The Data</h3>
+	    <p align="left">Our panel data are obtained from the <a href="https://cdr.ffiec.gov/public/">Call Reports</a> banks are required to file with the FDIC.</p>
+	    <ul>
+	      <li>Our sample contains quarterly data, and ranges from January 2001 to December 2017 inclusive.</li>
+	      <li>We have slightly more than 179,956 bank/year observations.</li>
+	      <li><a href="https://github.com/Matt-Brigida/FFIEC_Call_Reports/tree/master/data/"> We have made the data available here.</a></li>
+	    </ul>
+	  </section>
+	  <!-- descriptive statistics -->
+	  <section>
+	    <div class="stretch">
+	      <!-- <h6>Median Values</h6> -->
 	      <iframe src="./first_medians.html" height="100%" width="100%"></iframe>
 	    </div>
-		  </section>
-		  		  <section>
-		    <div class="stretch">
+	  </section>
+	  <section>
+	    <div class="stretch">
 	      <iframe src="./medians_ta_te.html" height="100%" width="100%"></iframe>
 	    </div>
 	  </section>
 	  <!-- 	  <section> -->
-	  <!-- 	    <div class="stretch"> -->
-	  <!--     <iframe src="./medians_amt_loans.html" height="100%" width="100%"></iframe> -->
-	  <!--   </div> -->
-	  <!-- </section> -->
+	    <!-- 	    <div class="stretch"> -->
+	      <!--     <iframe src="./medians_amt_loans.html" height="100%" width="100%"></iframe> -->
+	      <!--   </div> -->
+	    <!-- </section> -->
 	  <section data-background-color="#D9D9D9">
 	    <div class="stretch">
 	      <iframe src="./aa_summary_statistics.htm" height="100%" width="100%"></iframe>
@@ -88,25 +88,25 @@
 	    </div>
 	  </section>
 	</section>
-	
+
 	<section>
 	  <section>
-	  <h3>Fixed-Effects Model: <i>% Change Small Business Loans</i></h3>
-	  This model investigates the determinants of changes in small-business lending.  It has both firm and time fixed effects ($\alpha_{it}$).  Each independent variable is lagged one year relative to the dependent variable.  The model has the following specification:
-	</section>
-	<section>
-	  <p align="left"><span class="fragment highlight-green">$\% \Delta SB\ Loans$</span>$ = \beta_1 ($<span class="fragment highlight-green">$Capital\ Ratio$</span>$) +$</p>
-	  <p align="right">$+ \beta_2 \frac{Amt.\ SB\ Loans}{TA} + \beta_3$<span class="fragment highlight-green">$ROA$</span>$ + \beta_4 \frac{NPA}{TA} + $</p>
-	  <p align="right">$+ \beta_5 \frac{Deposits}{TA} + \beta_6$<span class="fragment highlight-green">$log(TA)$</span>$ + \beta_7 (post\ crisis) +$</p>
-	  <p align="right">$+ $<span class="fragment highlight-green">$\alpha_{it}$</span>$ + \epsilon_{it}$</p>
-	</section>
-	<section>
-	  <p align="left">where <i>SB</i> denotes <i>Small Business</i>, <i>NPA</i> denotes <i>Non-Performing Assets</i>, and <i>TA</i> denotes <i>Total Assets</i>.  <i>post crisis</i> is an indicator variable for the years 2012--2015 inclusive.</p>
-	</section>
+	    <h3>Fixed-Effects Model: <i>% Change Small Business Loans</i></h3>
+	    This model investigates the determinants of changes in small-business lending.  It has both firm and time fixed effects ($\alpha_{it}$).  Each independent variable is lagged one year relative to the dependent variable.  The model has the following specification:
+	  </section>
+	  <section>
+	    <p align="left"><span class="fragment highlight-green">$\% \Delta SB\ Loans$</span>$ = \beta_1 ($<span class="fragment highlight-green">$Capital\ Ratio$</span>$) +$</p>
+	    <p align="right">$+ \beta_2 \frac{Amt.\ SB\ Loans}{TA} + \beta_3$<span class="fragment highlight-green">$ROA$</span>$ + \beta_4 \frac{NPA}{TA} + $</p>
+	    <p align="right">$+ \beta_5 \frac{Deposits}{TA} + \beta_6$<span class="fragment highlight-green">$log(TA)$</span>$ + \beta_7 (post\ crisis) +$</p>
+	    <p align="right">$+ $<span class="fragment highlight-green">$\alpha_{it}$</span>$ + \epsilon_{it}$</p>
+	  </section>
+	  <section>
+	    <p align="left">where <i>SB</i> denotes <i>Small Business</i>, <i>NPA</i> denotes <i>Non-Performing Assets</i>, and <i>TA</i> denotes <i>Total Assets</i>.  <i>post crisis</i> is an indicator variable for the years 2012--2015 inclusive.</p>
+	  </section>
 	</section>
 
 
-<section>
+	<section>
 	  <section>
 	    <h4>Fixed-Effects Model: <i>% Change Small Business Loans</i></h4>
 	    <h5>Results</h5>
@@ -116,96 +116,116 @@
 	      <iframe src="t1_lev_ratio.htm" height="100%" width="100%"></iframe>
 	    </div>
 	  </section>
-    <section data-background-color="#D9D9D9">
-      <div class="stretch">
-        <iframe src="t1_RBC_ratio.htm" height="100%" width="100%"></iframe>
-      </div>
-    </section>
-</section>
+	  <section data-background-color="#D9D9D9">
+	    <div class="stretch">
+              <iframe src="t1_RBC_ratio.htm" height="100%" width="100%"></iframe>
+	    </div>
+	  </section>
+	  <section data-background-image="./code_image.jpg">
+	    <div class="stretch">
+	      <iframe src="https://micfm.shinyapps.io/PLUM_FE_model/" height="100%" width="100%"></iframe>
+	    </div>
+	  </section>
+	  <section>
+	    <h3>Summary</h3>
+	    <ul>
+	      <li class="fragment fade-up">Small-business lending is positively related to the T1 Leverage ratio.</li>
+	      <li class="fragment fade-up">The coefficient on the T1 Leverage ratio is not affected by MDI status.</li>
+	      <li class="fragment fade-up">Equity investments still may have a larger effect on MDIs given their smaller size.</li>
+	      <li class="fragment fade-up">Small-business lending is decreasing in bank size.</li>
+	      <li class="fragment fade-up">The model <b class="fragment highlight-red">$R^2$ should be improved</b>.</li>
+	    </ul>
+	  </section>
+	</section>
 
 
 
 	<section>
 	  <section>
-	  <h3>Fixed-Effects Model: $ROA$</h3>
-	  <p align="left">This model investigates the determinants of changes in bank $ROA$.  It has both firm and time fixed effects ($\alpha_{it}$).  Each independent variable is lagged one year relative to the dependent variable.  The model has the following specification:</p>
-	 </section>
+	    <h3>Fixed-Effects Model: $ROA$</h3>
+	    <p align="left">This model investigates the determinants of changes in bank $ROA$.  It has both firm and time fixed effects ($\alpha_{it}$).  Each independent variable is lagged one year relative to the dependent variable.  The model has the following specification:</p>
+	  </section>
 
-	<section>
-	  <p align="left"><span class="fragment highlight-green">$ROA$</span>$ = \beta_1 ($<span class="fragment highlight-green">$Capital\ Ratio$</span>$) +$</p>
-	  <p align="right">$+ \beta_2 \frac{Amt.\ SB\ Loans}{TA} + \beta_3$<span class="fragment highlight-green">$\% \Delta SB\ Loans$</span>$ + \beta_4 \frac{NPA}{TA} + $</p>
-	  <p align="right">$+ \beta_5 \frac{Deposits}{TA} + \beta_6$<span class="fragment highlight-green">$log(TA)$</span>$ + \beta_7 (post\ crisis) +$</p>
-	  <p align="right">$+ $<span class="fragment highlight-green">$\alpha_{it}$</span>$ + \epsilon_{it}$</p>
+	  <section>
+	    <p align="left"><span class="fragment highlight-green">$ROA$</span>$ = \beta_1 ($<span class="fragment highlight-green">$Capital\ Ratio$</span>$) +$</p>
+	    <p align="right">$+ \beta_2 \frac{Amt.\ SB\ Loans}{TA} + \beta_3$<span class="fragment highlight-green">$\% \Delta SB\ Loans$</span>$ + \beta_4 \frac{NPA}{TA} + $</p>
+	    <p align="right">$+ \beta_5 \frac{Deposits}{TA} + \beta_6$<span class="fragment highlight-green">$log(TA)$</span>$ + \beta_7 (post\ crisis) +$</p>
+	    <p align="right">$+ $<span class="fragment highlight-green">$\alpha_{it}$</span>$ + \epsilon_{it}$</p>
+	  </section>
+
+	  <section>
+	    <p align="left">where <i>SB</i> denotes <i>Small Business</i>, <i>NPA</i> denotes <i>Non-Performing Assets</i>, and <i>TA</i> denotes <i>Total Assets</i>.  <i>post crisis</i> is an indicator variable for the years 2012--2015 inclusive.</p>
+	  </section>
 	</section>
 
 	<section>
-	  <p align="left">where <i>SB</i> denotes <i>Small Business</i>, <i>NPA</i> denotes <i>Non-Performing Assets</i>, and <i>TA</i> denotes <i>Total Assets</i>.  <i>post crisis</i> is an indicator variable for the years 2012--2015 inclusive.</p>
+	  <section>
+	    <h4>Fixed-Effects Model: <i>ROA</i></h4>
+	    <h5>Results</h5>
+	  </section>
+	  <section data-background-color="#D9D9D9">
+            <div class="stretch">
+              <iframe src="ROA_t1_ratio.htm" height="100%" width="100%"></iframe>
+            </div>
+	  </section>
+          <section data-background-color="#D9D9D9">
+            <div class="stretch">
+              <iframe src="ROA_t1_RCBR_ratio.htm" height="100%" width="100%"></iframe>
+            </div>
+	  </section>
+	  <section data-background-image="./code_image.jpg">
+	    <div class="stretch">
+	      <iframe src="https://micfm.shinyapps.io/PLUM_FE_ROA/" height="100%" width="100%"></iframe>
+	    </div>
+	  </section>
 	</section>
-	</section>
-
-<section>
-	   <section>
-	      <h4>Fixed-Effects Model: <i>ROA</i></h4>
-	       <h5>Results</h5>
-	    </section>
-      <section data-background-color="#D9D9D9">
-        <div class="stretch">
-          <iframe src="ROA_t1_ratio.htm" height="100%" width="100%"></iframe>
-        </div>
-      </section>
-            <section data-background-color="#D9D9D9">
-        <div class="stretch">
-          <iframe src="ROA_t1_RCBR_ratio.htm" height="100%" width="100%"></iframe>
-        </div>
-      </section>
-
-</section>
 
 
 
 
 
-<!-- the effect of bank size (total assets) on the coefficients of our model -->
-<section data-background-image="./code_image.jpg">
-  <div class="stretch">
-    <iframe src="viz_ROA_size_less_100.html" height="76%" width="80%"></iframe>
-  </div>
-</section>
+	<!-- the effect of bank size (total assets) on the coefficients of our model -->
+	<section>
+	  <section>
+	    <h3>The Effect of Bank Size on Paramters</h3>
+	    <p align="left">
+	      The following charts show the estimated coeffeicients on T1 Levreage Ratio as a function of bank size.    
+	    </p>
+	  </section>
+	  <section data-background-image="./code_image.jpg">
+	    <div class="stretch">
+	      <iframe src="viz_ROA_size_less_100.html" height="76%" width="80%"></iframe>
+	    </div>
+	  </section>
 
-<section data-background-image="./code_image.jpg">
-  <div class="stretch">
-    <iframe src="viz_ROA_size_100_250.html" height="76%" width="80%"></iframe>
-  </div>
-</section>
+	  <section data-background-image="./code_image.jpg">
+	    <div class="stretch">
+	      <iframe src="viz_ROA_size_100_250.html" height="76%" width="80%"></iframe>
+	    </div>
+	  </section>
 
-<section data-background-image="./code_image.jpg">
-  <div class="stretch">
-    <iframe src="viz_ROA_size_250_1000.html" height="76%" width="80%"></iframe>
-  </div>
-</section>
+	  <section data-background-image="./code_image.jpg">
+	    <div class="stretch">
+	      <iframe src="viz_ROA_size_250_1000.html" height="76%" width="80%"></iframe>
+	    </div>
+	  </section>
+
+	  <section data-background-image="./code_image.jpg">
+	    <div class="stretch">
+	      <iframe src="./viz_sb_size_250_1000.html" height="76%" width="80%"></iframe>
+	    </div>
+	  </section>
 
 
-<section data-background-image="./code_image.jpg">
-  <div class="stretch">
-    <iframe src="./viz_sb_size_250_1000.html" height="76%" width="80%"></iframe>
-  </div>
-</section>
+	  <section>
+	    <a href="https://github.com/FinancialMarkets/PLUM_presentation">The Presentation</a>
+	    <br>
+	    <br>
+	    <a href="https://github.com/Matt-Brigida/FFIEC_Call_Reports">All Code and Data</a>
+	  </section>
 
-<!-- interactive apps -->
-<!-- <section data-background-image="./code_image.jpg"> -->
-<!--   <div class="stretch"> -->
-<!--     <iframe src="https://micfm.shinyapps.io/PLUM_FE_model/" height="100%" width="100%"></iframe> -->
-<!--   </div> -->
-<!-- </section> -->
-
-<!-- <section data-background-image="./code_image.jpg"> -->
-<!--   <div class="stretch"> -->
-<!--     <iframe src="https://micfm.shinyapps.io/PLUM_FE_ROA/" height="100%" width="100%"></iframe> -->
-<!--   </div> -->
-	  <!-- </section> -->
-
-</div>
-</div>
+      </div>
+    </div>
 
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
